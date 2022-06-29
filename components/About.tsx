@@ -31,7 +31,7 @@ const About = () => {
     initial="hidden"
     animate={control}
   >
-    <div id='about' className='w-full py-5 md:py-16 md:h-screen p-2 flex items-center '>
+    <div id='about' className='w-[90%] py-5 md:py-16 md:h-screen p-2 flex items-center '>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#70d095]'>
