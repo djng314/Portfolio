@@ -43,7 +43,7 @@ const Skills = () => {
         </p>
         <h2 className='py-4'>What I Can Do</h2>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Javascript} width='64px' height='64px' alt='/' />
@@ -53,7 +53,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Typescript} width='64px' height='64px' alt='/' />
@@ -63,7 +63,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Tailwind} width='64px' height='64px' alt='/' />
@@ -74,7 +74,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Github} width='64px' height='64px' alt='/' />
@@ -84,7 +84,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={NextJS} width='64px' height='64px' alt='/' />
@@ -94,7 +94,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={MongoDB} width='64px' height='64px' alt='/' />
@@ -104,7 +104,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Sanity} width='64px' height='64px' alt='/' />
@@ -114,7 +114,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          <div className='hover:animate-pulse p-6 shadow-xl rounded-xl hover:sccale-110 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Lua} width='64px' height='64px' alt='/' />
