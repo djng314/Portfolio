@@ -2,9 +2,35 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import AboutImg from '../public/assets/background.png';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 }
+};
 const About = () => {
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
+    <motion.div
+    className="box"
+    ref={ref}
+    variants={boxVariant}
+    initial="hidden"
+    animate={control}
+  >
     <div id='about' className='w-full py-5 md:py-16 md:h-screen p-2 flex items-center '>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
@@ -32,6 +58,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 

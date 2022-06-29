@@ -7,8 +7,11 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Project from '../components/Projects'
 import Contacts from '../components/Contacts'
-import { motion } from 'framer-motion'
+
+
+
 export default function Home() {
+  
   return (
     <div className="flex min-h-screen flex-col">
       <Head>
@@ -18,13 +21,14 @@ export default function Home() {
 
       <Navbar />
       <Main />
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease: "easeOut", duration: 0.5, delay:4 }}>
- 
+      
+
       <About />
+
+
       <Skills />
       <Project/>
       <Contacts/>
-      </motion.div>
     </div>
   )
 }

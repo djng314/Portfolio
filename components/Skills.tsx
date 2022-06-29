@@ -8,10 +8,35 @@ import Typescript from '../public/assets/typescript.png';
 import NextJS from '../public/assets/NextJS.png';
 import Lua from '../public/assets/lua.png';
 import Sanity from '../public/assets/sanity.png';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 }
+};
 
 const Skills = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
-    <div id='skills' className='w-full lg:h-screen p-2'>
+    <motion.div
+    className="box"
+    ref={ref}
+    variants={boxVariant}
+    initial="hidden"
+    animate={control}
+  >
+        <div id='skills' className='w-full lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-[#70d095]'>
           Skills
@@ -102,6 +127,8 @@ const Skills = () => {
         </div>
       </div>
     </div>
+  </motion.div>
+
   );
 };
 
