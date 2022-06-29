@@ -151,11 +151,11 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className='pt-30 max-w-["180px"]'>
+            <div className='pt-35 '>
               <p className=' tracking-widest '>
                <span className="font-bold text-[#70d095]">Connect</span>{" "} with me
               </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+              <div className='flex items-center justify-between my-4 w-[40%] sm:w-[40%]'>
                 <a
                   href='https://github.com/djng314'
                   target='_blank'
