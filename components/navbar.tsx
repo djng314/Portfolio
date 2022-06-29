@@ -151,7 +151,7 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className='pt-40'>
+            <div className='pt-40 max-w-["180px"]'>
               <p className=' tracking-widest '>
                <span className="font-bold text-[#70d095]">Connect</span>{" "} with me
               </p>
