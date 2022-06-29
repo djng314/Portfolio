@@ -32,7 +32,7 @@ const Projects = () => {
     initial="hidden"
     animate={control}
   >
-     <div id='projects' className='w-[90%]'>
+     <div id='projects' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#70d095]'>
           Projects
