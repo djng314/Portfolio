@@ -155,15 +155,16 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className='pt-35 '>
-              <p className=' tracking-widest '>
+            <div className='py-45 '>
+              <p className='pt-10 tracking-widest '>
                <span className="font-bold text-[#70d095]">Connect</span>{" "} with me
               </p>
-              <div className='flex items-center justify-between my-auto max-w-["180px"]'>
+              <div className='pt-5 flex items-center justify-start my-auto max-w-["180px"]'>
                 <a
                   href='https://github.com/djng314'
                   target='_blank'
                   rel='noreferrer'
+                  className='pr-5'
                 >
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />

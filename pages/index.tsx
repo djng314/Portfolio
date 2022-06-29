@@ -17,13 +17,14 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease: "easeOut", duration: 0.5, delay:4 }}></motion.div>
       <Main />
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease: "easeOut", duration: 0.5, delay:4 }}>
+ 
       <About />
       <Skills />
       <Project/>
       <Contacts/>
-      <motion.div/>
+      </motion.div>
     </div>
   )
 }
